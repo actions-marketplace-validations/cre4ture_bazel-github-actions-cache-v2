@@ -30,6 +30,6 @@ jobs:
           cache: true
       - if: matrix.language == 'go'
         run: go build ./...
-      - uses: github/codeql-action/analyze@e58424170fb0262c8d7ed60a2e84b9bffe205c67 # codeql-bundle-v2.26.1
+      - uses: github/codeql-action/analyze@6f530319d8c989665d0835536ec9571735fd2008 # codeql-bundle-v2.26.1
         with:
           category: /language:${{ matrix.language }}
