@@ -20,7 +20,7 @@ jobs:
         language: [go, javascript-typescript]
     steps:
       - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
-      - uses: github/codeql-action/init@e58424170fb0262c8d7ed60a2e84b9bffe205c67 # codeql-bundle-v2.26.1
+      - uses: github/codeql-action/init@3db7caf9014b962f9392088c0fcaf53eeddf47db # codeql-bundle-v2.26.1
         with:
           languages: ${{ matrix.language }}
       - if: matrix.language == 'go'
